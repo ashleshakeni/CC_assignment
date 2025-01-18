@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 Aug 2024, 2:44:47 pm
+    Author     : ashle
+*/
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between products */
+    justify-content: center;
+}
+
+.product-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+.product-item {
+    width: 20%; /* Adjust width as needed */
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h2 {
+    font-size: 1.2em;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #555;
+}

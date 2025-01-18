@@ -1,0 +1,176 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Bill container */
+.bill-container {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Table styles */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.bill-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+.bill-table th, 
+.bill-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.bill-table th {
+    font-weight: 600;
+}
+
+.bill-table td {
+    font-size: 16px;
+}
+
+.bill-table tfoot th {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    background-color: #f1f1f1;
+}
+
+/* Checkout action buttons */
+.checkout-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-actions form {
+    width: 48%;
+}
+
+.checkout-actions button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-actions button:hover {
+    background-color: #0056b3;
+}
+
+.confirm-button {
+    background-color: #28a745;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}
+
+.return-button {
+    background-color: #ff4d4d;
+}
+
+.return-button:hover {
+    background-color: #d92626;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .bill-container {
+        padding: 20px;
+    }
+
+    .bill-table th, 
+    .bill-table td {
+        padding: 10px;
+    }
+
+    .checkout-actions {
+        flex-direction: column;
+    }
+
+    .checkout-actions form {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bill-table th, 
+    .bill-table td {
+        font-size: 14px;
+    }
+
+    .bill-container h1 {
+        font-size: 24px;
+    }
+
+    .checkout-actions button {
+        font-size: 14px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}

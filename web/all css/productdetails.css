@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+/* Product Detail Section */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price del {
+    color: #999;
+    margin-right: 10px;
+}
+
+.price span {
+    color: #e60023;
+    font-weight: bold;
+}
+
+.sale-badge {
+    display: inline-block;
+    background-color: #4e73df;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity button:hover {
+    background-color: #ccc;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.actions button.add-to-cart {
+    background-color: #000;
+}
+
+.actions button.make-an-offer {
+    background-color: #e60023;
+}
+
+.actions button.buy-now {
+    background-color: #d3a1d8;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}
+
+.product-details {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}

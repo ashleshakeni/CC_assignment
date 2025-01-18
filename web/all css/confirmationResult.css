@@ -1,0 +1,107 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Sept 2024, 1:04:43 am
+    Author     : ashle
+*/
+/* Styling for the Final Confirmation Page */
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Background Image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('photos/confirm.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Background Video (if you want to use a video instead) */
+/* Uncomment if you'd prefer a video background */
+/*
+video.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+*/
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Confirmation Details */
+.confirmation-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+    line-height: 1.8;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Paragraphs */
+p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .confirmation-details p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,158 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.swap-button {
+    background-color: #4CAF50; /* Coral color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.swap-button:hover {
+    background-color: #ff8567; /* Slightly lighter coral color */
+    transform: scale(1.05);
+}
+
+.swap-button:active {
+    transform: scale(0.95);
+}
+
+/* Instructions Section */
+.instructions-section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.instructions-section p, .instructions-section ul {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.instructions-section h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.instructions-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.instructions-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.instructions-section ul li:before {
+    content: '•';
+    color: #FFD700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Icons for criteria */
+.checkmark::before {
+    content: '✔ ';
+    color: #4CAF50;
+}
+
+.cross::before {
+    content: '❌ ';
+    color: #FF0000;
+}
+
+.dress::before {
+    content: '👗 ';
+    color: #FF69B4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .instructions-section {
+        padding: 15px;
+    }
+
+    .cta-button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .instructions-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

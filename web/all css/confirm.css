@@ -1,0 +1,143 @@
+/* 
+    Created on : 10 Sept 2024, 1:01:31 am
+    Author     : ashle
+*/
+/* Styling for the Confirmation Page */
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Background Video (if you want to use a video instead of an image) */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('photos/confirm.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Keep background fixed on scroll */
+    filter: blur(8px); /* Add a blur effect for better readability of the content */
+}
+
+/* If you want to use a video, add this below */
+/*video.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;  Makes sure the video covers the entire background 
+}*/
+/* Form Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    position: relative; /* For z-index layering */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    color: #555;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+/* Label and Input Styling */
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ff4500;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.95rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+}
